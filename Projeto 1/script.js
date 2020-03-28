@@ -1,21 +1,32 @@
-//while = Enquanto.
+//Switch
 
-x=0;
-
-
-while(x < 10){
- document.write("<br> O valor do X e: " + x);
-
-x++;
-
-}
-
-x = 5   
-document.write("<br><br><br> O x esta valendo: " + x + "<br><br>");
+document.write("<br> Escolha seu pedido: </br>");
+document.write("<br> 0 - Sorvete / 1 - Suco</br>");
+document.write("<br> 2 - Coca cola / 3 - Agua gelada </br><br>");
 
 
-//For = Para
+function pedir(){
+    
+    x = prompt("O que deseja pedir?");
 
-for(a = 0; a < 10; a++ ){
-    document.write("<br> O valor do A e: " + a);
+    switch(x){
+    
+        case "0":
+            alert("Voce pediu sorvete !");
+            break;
+        case "1":
+            alert("Voce pediu um suco !");
+            break;
+        case "2":
+            alert("Voce pediu uma coca gelada !");
+            break;
+        case "3":
+             alert("Voce pediu uma agua natural !");
+             break;
+        default:
+            alert("Nao temos essa opcao !");
+            break;
+    
+    }
+
 }
