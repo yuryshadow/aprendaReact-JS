@@ -1,11 +1,10 @@
-function acao(){
-    document.write("Executando... <br>");
+var nome = '';
+
+if ( typeof localStorage.nome == 'null'){
+    localStorage.nome = prompt("Digite seu nome?");
 }
 
 
-// Executa de tempo em tempo
-var time = setInterval (acao, 1000);
+nome = localStorage.nome;
 
-
-
-//setTimeout(acao, 3000);
+document.getElementById('nome').innerHTML = nome;
