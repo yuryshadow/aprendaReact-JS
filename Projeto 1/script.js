@@ -1,13 +1,21 @@
-function cadastrar(usuarios, ...novosusuarios){
-    let totalusuarios = [
-        ...usuarios,
-        ...novosusuarios
-    ]
 
-    return console.log(totalusuarios);
 
-}
+const lista = [1,2,3,4,5,6];
 
-let usuarios = ["Yuri","Maria"];
 
-let novosusuarios = cadastrar(usuarios, "Marvim", "Nero");
+const novalista = lista.map(function(item, index){
+    return item + index;
+});
+
+console.log(novalista);
+
+const soma = lista.reduce(function(total, proximo){
+    return total + proximo;
+});
+
+console.log(soma);
+
+const find = lista.find(function(item){
+    return item === 6;
+});
+console.log(find);
