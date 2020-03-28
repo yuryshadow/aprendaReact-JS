@@ -1,21 +1,15 @@
 
 
-const lista = [1,2,3,4,5,6];
+function adicionar(...numeros){
+    
+    let total = numeros.reduce((total, proximo) => {
+        let soma = total + proximo;
+        return soma;
+        
+    });
+    
+    console.log(total);
 
+}
 
-const novalista = lista.map(function(item, index){
-    return item + index;
-});
-
-console.log(novalista);
-
-const soma = lista.reduce(function(total, proximo){
-    return total + proximo;
-});
-
-console.log(soma);
-
-const find = lista.find(function(item){
-    return item === 6;
-});
-console.log(find);
+adicionar(1,2,3,4,5,8,9);
