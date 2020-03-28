@@ -1,7 +1,7 @@
 
 
 // Este eh o meu nome
-var nome = "Yuri";
+//var nome = "Yuri";
 
 /*
 Este
