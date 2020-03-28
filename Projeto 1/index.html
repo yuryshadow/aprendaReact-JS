@@ -6,8 +6,24 @@
     </head>
     <body>
         
-        <button onclick="window.location.href= 'contato.html';"> Ir ao contato</button>
-        <button onclick="window.location.href = window.location.href ">Atualizar a Pagina</button>
+        <div id="area">
+            Bem vindo ...
+        </div>
+
+        <br><br>
+
+        <button onclick="document.getElementById('area').innerHTML ='Bem vindo ' + prompt('Qual seu nome?')">Entrar</button>
+
+        <!--------------------------------------------->
+
+        <br><br>
+        <div id="area">
+           Qual nome do botao ? 
+        </div>
+
+        <br><br>
+
+        <button onclick="this.innerHTML =prompt('Qual nome do botao?')">Qual meu nome?</button>
 
 
     </body>
