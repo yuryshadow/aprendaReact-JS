@@ -1,10 +1,11 @@
-var nome = '';
-
-if ( typeof localStorage.nome == 'null'){
-    localStorage.nome = prompt("Digite seu nome?");
+function cadastroPessoa(info){
+    let novosDados = {
+        ...info,
+        cargo: 'Programador',
+        status: 1,
+        codigo: '123456464654'
+    }
+    return novosDados;
 }
 
-
-nome = localStorage.nome;
-
-document.getElementById('nome').innerHTML = nome;
+console.log(cadastroPessoa({nome: 'Yuri', sobrenome: 'Carlos', anoInicio: 2045}));
